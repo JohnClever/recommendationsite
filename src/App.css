@@ -75,6 +75,16 @@
 
  select {
       -moz-appearance: textfield;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -ms-appearance: none;
+      outline: none;
+      -webkit-user-select: none;
+        -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      font-size: 12px;   
     }
 
     select{
