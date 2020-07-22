@@ -2,14 +2,14 @@
   *{
       margin: 0;
       padding: 0;
-      overflow: hidden !important;
+      overflow: hidden;
   }
   
   body{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      overflow: hidden !important;
+      overflow: hidden ;
       height: 100vh;
       background: #000;
       display: flex;
@@ -22,6 +22,7 @@
       border-radius: 0px;
   }
   .sidebar_content{
+      overflow: visible;
       width: 100%;
       background-color: #fff;
       height: 80vh;  
@@ -134,11 +135,11 @@
       height: 35px;
       border-radius: 40px;
       border: none;
-   
+        text-align: center;
       color: #fff;
       background: #29254a;
       font-family: sans-serif;
-   
+   text-indent: 20px;
   }
   
   .sidebar_content a{
