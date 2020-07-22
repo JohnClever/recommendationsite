@@ -1,21 +1,23 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import {Link} from 'react-router-dom'
+import Hamburger from './Hamburger'
 
 export default function Firstpage() {
     return (
-        <div>
+        <Fragment>
             <div className="sidebar">
-                <div className="sidebar_icon">
-                    {/* <img src="" alt="" /> */}
-                </div>  
+                <Hamburger />
                 <div className="sidebar_content">
                     <div className="sidebar_profile">
                         <div className="profile">
-                            {/* <img src="" alt="" /> */}
+                            <img src="" alt="" />
                         </div>
                         <div className="info">
-                            <h3 className="fl">Uchicha Madara</h3>
-                            {/* <h3 className="info_active fl">.</h3> */}
-                            <p>ID: 0013778</p>
+                            <div className="info_active">
+                                <h3>Naruto Uzumaki</h3>
+                                <div className="hello"></div>
+                            </div>
+                            <p>ID : 0013778</p>
                         </div>
                     </div>      
                     <select name="" id="">
@@ -26,16 +28,10 @@ export default function Firstpage() {
                         <option value="">Diapers</option>
                     </select>
                     <input type="" placeholder="Input product" id="input" /> 
-                    <input type="submit" value="Analyse" id="analyse" />
-                    <div className="sidebar_container">
-                        <span>Recent Products</span>
-                    <div className="recent_products">
-                        <a href="/"><p className="product_one"><img src="Project Icons/purchase flat.png" alt="" /> Plaster from Paris</p></a>
-                    <a href="/"> <p className="product_two"><img src="Project Icons/purchase flat.png" alt="" /> Measuring Tape</p></a>
-                    </div>
-                    </div>    
+                    <Link to="second-page">Analyse</Link>   
+                   
                 </div>
             </div>
-        </div>
+        </Fragment>
     )
 }
