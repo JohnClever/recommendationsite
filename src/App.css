@@ -66,7 +66,7 @@
       border-radius: 30px;
       border: .5px solid rgba(0, 0, 0, 0.5);
       font-size: 16px;   
-
+     
   }
   .hello{
     background-color: rgb(5, 197, 5);
@@ -252,13 +252,13 @@
       color: #fff;
       font-family: sans-serif;
       letter-spacing: 1px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
      
       height: 10%;
   }
   .section-two .graph .graph-content{
     width: 100%;
-    height: 90%;
+    height: 85%;
     background-color: rgba(255, 255, 255, 0.09);
     border-radius: 10px;
   }
