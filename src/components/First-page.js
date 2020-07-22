@@ -7,7 +7,9 @@ export default function Firstpage() {
         <Fragment>
             <div className="sidebar">
                 <Hamburger />
-                <div className="sidebar_content">
+                
+            </div>
+            <div className="sidebar_content">
                     <div className="sidebar_profile">
                         <div className="profile">
                             <img src="" alt="" />
@@ -31,7 +33,6 @@ export default function Firstpage() {
                     <Link to="second-page">Analyse</Link>   
                    
                 </div>
-            </div>
         </Fragment>
     )
 }
