@@ -6,11 +6,12 @@ export default function Thirdpage() {
         <Fragment>
             <div className="section-three">
             <Hamburger />
-                <div className="section-three_content">
+               
+            </div>
+            <div className="section-three_content">
                     
                
                 
-                </div>
             </div>
         </Fragment>
     )
