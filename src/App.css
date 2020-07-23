@@ -211,22 +211,21 @@
   }
   .section-two .graph{
     width: 80%;
-    height: 180px;
-   
+    height: 40%;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
   }
   .section-two .graph-info{
     width: 80%;
-    height: 100px;
+    height: 20%;
     background-color: rgba(255, 255, 255, 0.09);
     margin-bottom: 20px;
     border-radius: 10px;
   }
   .section-two .recommendation{
     width: 80%;
-    height: 40px;
+    height: 7%;
     background-color: rgba(255, 255, 255, 0.09);
     margin-bottom: 20px;
     border-radius: 10px;
@@ -236,10 +235,11 @@
     align-items: center;
     text-transform: capitalize;
     text-decoration: none;
+    
   }
   .section-two .products{
     width: 75%;
-    height: 40px;
+    height: 6%;
     background-color: #ff6029;
     border-radius: 30px;
     color: #fff;

@@ -11,8 +11,8 @@ export default function Secondpage() {
                     <div className="graph-content"></div>
                 </div>
                 <div className="graph-info"></div>
-               <Link to="third-page" className="recommendation"><div>20 recommendations</div></Link> 
-               <Link to="/" className="products"><div >Products</div></Link>  
+              <div  className="recommendation">20 recommendations</div>
+               <Link to="third-page" className="products"><div >Products</div></Link>  
             </div>
         </Fragment>
     )
