@@ -14,6 +14,7 @@ function App() {
             <Route exact path="/third-page" component={Thirdpage} />
         </Switch>
     </Router>
+    
   );
 }
 

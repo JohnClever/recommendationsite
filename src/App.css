@@ -17,14 +17,14 @@
   .sidebar{
       width: 100%;
       background-color: #0091d1;
-      height: 25vh;
+      height: 30vh;
       border-radius: 0px;
   }
   .sidebar_content{
       overflow: visible;
       width: 100%;
       background-color: #fff;
-      height: 90vh;  
+      height: 70vh;  
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       display: flex;
@@ -299,6 +299,12 @@
 }
 .icon:hover div{
     background-color: #fff;
+}
+.graph2-content{
+   margin-top: 20px;
+   margin-left: -20px;
+   
+   
 }
 
 }
