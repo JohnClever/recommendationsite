@@ -1,8 +1,38 @@
-import React, { Fragment } from 'react'
-import {Link} from 'react-router-dom'
+import React, { Fragment, Component } from 'react'
+import {Link, withRouter} from 'react-router-dom'
 import Hamburger from './Hamburger'
 
-export default function Firstpage() {
+
+class Firstpage extends Component {
+
+    constructor (props){
+        super(props);
+
+        this.state = {
+            jay: []
+        }
+    }
+
+    
+    componentDidMount(){
+        fetch('https://www.dunfred.com/api/app/recommendations/')
+        .then(response => response.json())
+        .then(data => this.setState({ jay : data }))
+    
+    }
+
+    render(){
+       
+        const getInfo = (e) => {
+            let infoValue = document.getElementById('input').value
+            if (infoValue === '' || infoValue === null) {
+                console.log('Please input something');
+            }
+            else{
+                // console.log('welcome');
+                this.props.history.push('second-page')
+            }
+        }
     return (
         <Fragment>
             <div className="sidebar">
@@ -29,10 +59,13 @@ export default function Firstpage() {
                         <option value="">Diapers</option>
                         <option value="">Diapers</option>
                     </select>
-                    <input type="" placeholder="Input product" id="input" /> 
-                    <Link to="second-page">Analyse</Link>   
-                   
+                    <input type="text" placeholder="Input product" id="input" /> 
+                    <Link to="" onClick={getInfo}>Analyse</Link>   
+                  
                 </div>
         </Fragment>
     )
+    }
 }
+
+export default withRouter(Firstpage);

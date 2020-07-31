@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import Hamburger from './Hamburger'
+// import Recommendationcalls from './Recommendationcalls'
 
 export default function Thirdpage() {
     return (
@@ -9,7 +10,9 @@ export default function Thirdpage() {
                
             </div>
             <div className="section-three_content">
-                    
+               <div className="content-images">
+                  {/* <Recommendationcalls /> */}
+                </div>     
                
                 
             </div>
